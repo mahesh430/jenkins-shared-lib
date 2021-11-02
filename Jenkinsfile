@@ -1,16 +1,2 @@
-
-pipeline{
-  
-  agent any
- 
-  stages{
-    stage('Tools initilization'){
-       steps {
-                   echo 'hello world'
-               }
-    }
-    
-    
-  }
-  
-}
+@Library('Jenkins-Shared-Lib') _
+jenkinsForJava 'https://github.com/mahesh430/jenkins-shared-lib.git'
