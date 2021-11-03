@@ -15,7 +15,7 @@ def call(String repoUrl){
       {
         steps{
          git branch: 'master'
-          url: "${repUrl}"
+          url: "${repoUrl}"
         }
         
       }
