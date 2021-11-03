@@ -8,8 +8,8 @@ def call(String repoUrl) {
        stages {
            stage("Tools initialization") {
                steps {
-                   sh "mvn --version"
-                   sh "java -version"
+//                    sh "mvn --version"
+//                    sh "java -version"
                }
            }
            stage("Checkout Code") {
