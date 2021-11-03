@@ -8,6 +8,7 @@ def call(String repoUrl) {
                steps {
                    git branch: 'master',
                        url: "${repoUrl}"
+                 echo 'printing repo url'
                  echo "${repoUrl}"
                }
            }
