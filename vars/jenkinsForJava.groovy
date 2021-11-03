@@ -11,11 +11,10 @@ def call(String repoUrl){
         sh "mvn --version"
         }
       }
-      stage('Code checkout')
-      {
+      stage('Code checkout'){
         steps{
          git branch: 'master'
-          url: "${repoUrl}"
+         url: "${repoUrl}"
         }
         
       }
