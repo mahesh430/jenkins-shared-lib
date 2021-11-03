@@ -3,13 +3,13 @@ def call(String repoUrl){
     agent any
     stages{
       
-      stage('Tools initilization')
-      {
-        steps{
-        sh "mvn --version"
-        sh "mvn --version"
-        }
-      }
+//       stage('Tools initilization')
+//       {
+//         steps{
+//         sh "mvn --version"
+//         sh "mvn --version"
+//         }
+//       }
       stage('Code checkout'){
         steps{
             echo 'Pulling...' + env.BRANCH_NAME
