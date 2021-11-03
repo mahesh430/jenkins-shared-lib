@@ -15,6 +15,7 @@ def call(String repoUrl){
 //             echo 'Pulling...' + env.BRANCH_NAME
 
          git branch: 'master'
+          echo "repo name is--"+"${repoUrl}"
          url: "${repoUrl}"
         }
         
