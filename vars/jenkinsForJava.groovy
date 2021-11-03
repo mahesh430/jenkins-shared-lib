@@ -12,10 +12,10 @@ def call(String repoUrl){
 //       }
       stage('Code checkout'){
         steps{
-            echo 'Pulling...' + env.BRANCH_NAME
+//             echo 'Pulling...' + env.BRANCH_NAME
 
-//          git branch: 'master'
-//          url: "${repoUrl}"
+         git branch: 'master'
+         url: "${repoUrl}"
         }
         
       }
