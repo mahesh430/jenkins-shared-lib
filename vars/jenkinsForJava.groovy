@@ -6,12 +6,12 @@ def call(String repoUrl) {
 //            jdk 'jdk8'
 //        }
        stages {
-           stage("Tools initialization") {
-               steps {
-//                    sh "mvn --version"
-//                    sh "java -version"
-               }
-           }
+//            stage("Tools initialization") {
+//                steps {
+// //                    sh "mvn --version"
+// //                    sh "java -version"
+//                }
+//            }
            stage("Checkout Code") {
                steps {
                    git branch: 'master',
