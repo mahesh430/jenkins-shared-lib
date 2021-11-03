@@ -1,5 +1,4 @@
 def call(String repoUrl){
-  
   pipeline {
     agent any
     stages{
@@ -13,8 +12,10 @@ def call(String repoUrl){
       }
       stage('Code checkout'){
         steps{
-         git branch: 'master'
-         url: "${repoUrl}"
+            echo 'Pulling...' + env.BRANCH_NAME
+
+//          git branch: 'master'
+//          url: "${repoUrl}"
         }
         
       }
